@@ -1,9 +1,27 @@
-import React from 'react'
+"use client"
+import Input from "@/app/components/common-components/Input"
+import React, { useState } from "react";
 
 const Login = () => {
-  return (
-    <div>Login</div>
-  )
-}
+  const [data, setData] = useState({
+    email: "",
+    password: ""
+  })
 
-export default Login
+  const handleChange = () => {
+
+  }
+  return (
+    <div>
+      <Input
+        name="email"
+        value={data.email}
+        handleChange={handleChange}
+        placeholder="Email"
+        type="text"
+      />
+    </div>
+  );
+};
+
+export default Login;

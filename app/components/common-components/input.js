@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const input = () => {
+const Input = ({ name, value, handleChange, type, placeholder }) => {
   return (
-    <div>input</div>
-  )
-}
+    <div className="w-full border">
+      <input
+        name={name}
+        value={value}
+        onChange={handleChange}
+        type={type}
+        placeholder={placeholder}
+      />
+    </div>
+  );
+};
 
-export default input
+export default Input;

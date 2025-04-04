@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Children } from 'react'
 
-const AuthLayout = () => {
+export default function AuthLayout ({children}) {
   return (
-    <div>AuthLayout</div>
+    <div>
+      {children}
+    </div>
   )
 }
-
-export default AuthLayout
